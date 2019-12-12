@@ -25,7 +25,7 @@
 <meta name="author" content="Damir Pintar">
 
 
-<meta name="date" content="2019-12-10">
+<meta name="date" content="2019-12-12">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -463,12 +463,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>U ovom trenutku bi trebalo razmotriti uključuje li podatkovni skup neke kategorijske podatke. Kao što smo naučili, za razliku od funkcije <code>read.csv</code> koja automatski faktorizira sve znakovne stupce (što nije preporučljivo), funkcija <code>read_csv</code> iz paketa <code>readr</code> ne faktorizira ništa, već to ostavlja na odgovornost analitičaru. Iako ovo predstavlja dodatni posao za analitičara, razina kontrole i robusnosti koja se time dobiva je više nego dostatni kompromis.</p>
 <p>U podatkovnom skupu <code>titanic</code> uočavamo sljedeće kategorijske varijable:</p>
 <ul>
-<li><em>Survival</em> (preživljavanje – 2 kategorije: “0” i “1”)</li>
-<li><em>Pclass</em> (putnička klasa – 3 kategorije: “1”, “2” i “3”)</li>
+<li><em>Survival</em> (preživljavanje – 2 kategorije: 0 i 1)</li>
+<li><em>Pclass</em> (putnička klasa – 3 kategorije: 1, 2 i 3)</li>
 <li><em>Sex</em> (spol – 2 kategorije: “M” i “F”)</li>
 <li><em>Embarked</em> (luka ukrcaja – 3 kategorije: “C”, “Q” i “S”)</li>
 </ul>
-<p>Kategorije smo namjerno definirali znakovnim nizovima (čak i kad se formalno radi o brojevima) jer se faktoriziranjem varijabli one (uglavnom) ponašaju kao znakovne varijable.</p>
 <p>Faktorizirajmo navedene stupce.</p>
 <p><strong>Zadatak 11.2 - Kategorizacija stupaca podatkovnoga skupa <code>Titanic</code></strong></p>
 <div class="sourceCode" id="cb437"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb437-1" title="1"><span class="co"># pretvorite stupce `Survival`, `Pclass`, `Sex` i `Embarked`</span></a>
